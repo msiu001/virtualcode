@@ -6,10 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines":{
+    "node":"6.9.x",
+    "npm":"3.10.x"
+  },
   "author": "Mario Siu",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mongoose": "^4.11.0",
+    "morgan": "^1.8.2",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0"
   }
 }

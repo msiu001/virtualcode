@@ -10,6 +10,8 @@
             a.dropdown-toggle(href="", data-toggle="dropdown")
                 | {{"Hi " + identity.currentUser.firstName + "  " + identity.currentUser.lastName}}
                 b.caret
-            ul.dropdown-menu
+             ul.dropdown-menu
+                li(ng-show="identity.currentUser.isAdmin()")
+                    a(href="/admin/users") User Admin
                 li
                     a(href="", ng-click="signout()") Sign Out
